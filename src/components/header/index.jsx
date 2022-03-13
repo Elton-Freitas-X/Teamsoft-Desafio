@@ -1,16 +1,19 @@
 import React from "react";
+import { Logo, Account, Shopping, ArrowDown } from "../icons";
 import "./style.css";
 
 const Header = () => {
   return (
     <nav>
       <div class="logo">
-        {/* <img src="./img/Deliverize Logo 1.png" />
-                <img src="./img/Deliverize Logo 1 (1).png" /> */}
+        <Logo />
       </div>
       <div class="entrega">
-        <h5>Entrega:</h5>
-        <p>R. Antonio Braoune, 222</p>
+        <div>
+          <h5>Entrega:</h5>
+          <p>R. Antonio Braoune, 222</p>
+        </div>
+        <ArrowDown />
       </div>
       <div class="input">
         <input
@@ -20,11 +23,11 @@ const Header = () => {
       </div>
       <div class="icons">
         <div>
-          <i class="far fa-user-circle"></i>
+          <Account />
           <a>Entrar</a>
         </div>
         <div>
-          <i class="fas fa-shopping-cart"></i>
+          <Shopping />
           <a>Carrinho</a>
         </div>
       </div>

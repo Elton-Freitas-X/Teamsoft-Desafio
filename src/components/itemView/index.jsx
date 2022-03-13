@@ -4,7 +4,7 @@ import './style.css'
 const ItemView = ({productName, productDescription, imageFood, price, discount}) => {
   return (
     <section className="itemView">
-      <img src="./img/foto.png" alt="Imagem Hamburguer" />
+      <img src="./hamburguer.png" alt="Imagem Hamburguer" />
       <h1>{productName}</h1>
       <p>
         {productDescription}

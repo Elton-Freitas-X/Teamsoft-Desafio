@@ -2,10 +2,10 @@
   border: 2px solid #9c9999;
   padding: 30px;
   border-radius: 4px;
-  height: 80vh;
-  width: 30vw;
+  height: 37rem;
+  width: 17.8vw;
   min-height: 602px;
-  min-width: 400px;
+  min-width: 440px;
 }
 
 .ItemAmout div {
@@ -45,7 +45,7 @@
   font-size: 14px;
 }
 
-.ItemAmout .FirstLast {
+.ItemAmout .totalize-ingredient {
   background-color: rgba(253, 215, 14, 0.2);
   padding: 8px 12px;
   width: 100%;
@@ -73,6 +73,11 @@
   justify-content: space-evenly;
 }
 
+.ItemAmout .adicionar .buttom{
+  border: none;
+  width: 100%;
+}
+
 .ItemAmout .adicionar button {
   border: none;
   background-color: #f09035;
@@ -89,9 +94,51 @@
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   .ItemAmout {
     padding: 0;
     border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 375px;
+    height: 80vh;
+  }
+
+  .ItemAmout .adicionar {
+    flex-direction: column;
+    padding: 0 35px;
+    height: 22vh;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .ItemAmout .totalize-ingredient{
+    height: 55px;
+  }
+
+  .ItemAmout .adicionar .elipse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+  }
+
+  .ItemAmout .adicionar .elipse div{
+    border: none;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .ItemAmout .adicionar .buttom{
+    margin: 0;
+  }
+
+  .ItemAmout .adicionar .buttom div{
+    margin: 0px 10px 0px 0px;
+  }
+
+  .ItemAmout .adicionar .buttom button {
+    margin: 0px;
   }
 }

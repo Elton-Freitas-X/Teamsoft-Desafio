@@ -1,71 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./style.css";
-import api from "../../services/api";
 
-const ItemAmount = () => {
-  
+const ItemAmount = ({ ingredients }) => {
+  console.log(ingredients);
 
   return (
     <section className="ItemAmout">
-      <div class="FirstLast">
-        <h1>Adicionar Ingredientes</h1>
-        <p>Até 8 ingredientes.</p>
+      {/*  {ingredients.map(i =>(
+      <div>
+        <h1>{i.group}</h1>
+        {i.itens.map(item =>(
+          <span>{item.nm_item}</span>
+        ))}
       </div>
-
-      <div class="opcoes">
-        <h1>Queijo cheddar</h1>
-        <div class="contador">
-          <div>
-            <span>-</span> 1 <span>+</span>
-          </div>
-        </div>
-        <p>+ R$4,99</p>
-      </div>
-
-      <div class="opcoes">
-        <h1>Cebola chispy</h1>
-        <div class="contador">
-          <div>
-            <span>-</span> 1 <span>+</span>
-          </div>
-        </div>
-        <p>+ R$3,50</p>
-      </div>
-
-      <div class="opcoes">
-        <h1>Molho cheddar</h1>
-        <div class="contador">
-          <div>
-            <span>-</span> 1 <span>+</span>
-          </div>
-        </div>
-        <p>+ R$3,50</p>
-      </div>
-
-      <div class="opcoes">
-        <h1>Molho cheddar</h1>
-        <div class="contador">
-          <div>
-            <span>-</span> 1 <span>+</span>
-          </div>
-        </div>
-        <p>+ R$3,50</p>
-      </div>
-
-      <div class="FirstLast">
-        <h1>Precisa de Talher?</h1>
-      </div>
-      <div class="adicionar">
+    ))}*/}
+      {ingredients.map((ingredient) => (
         <div>
-          <span>-</span> 1 <span>+</span>
+          <div class="totalize-ingredient">
+            <h1>{ingredient.group}</h1>
+            {ingredient.group === "Ingredientes Extras" ? (
+              <p>Até {ingredient.max_itens} ingredientes.</p>
+            ) : null}
+          </div>
+          {ingredient.type === "number" &&
+            ingredient.itens.map((item) => (
+              <div class="opcoes" key={item.id}>
+                <h1>{item.nm_item}</h1>
+                <div class="contador">
+                  <div>
+                    <span>-</span> 2 <span>+</span>
+                  </div>
+                </div>
+                <p>
+                  {new Intl.NumberFormat("pt-BR", {
+                    style: "currency",
+                    currency: "BRL",
+                  }).format(item.vl_item)}
+                </p>
+              </div>
+            ))}
+          {ingredient.type === "bolean" && (
+            <div class="elipse">
+              <span>Sim</span>
+              <input type="radio" name="opcao" value="Sim" />
+              <span>Não</span>
+              <input type="radio" name="opcao" value="Não" />
+            </div>
+          )}
         </div>
+      ))}
+
+      <div class="adicionar">
         <div class="elipse">
-          <span>Sim</span>
-          <input type="radio" name="opcao" value="Sim" />
-          <span>Não</span>
-          <input type="radio" name="opcao" value="Não" />
+          <div>
+            <span>Sim</span>
+            <input type="radio" name="opcao" value="Sim" />
+          </div>
+          <div>
+            <span>Não</span>
+            <input type="radio" name="opcao" value="Não" />
+          </div>
         </div>
-        <button>Adicionar</button>
+        <div className="buttom">
+          <div>
+            <span>-</span> 1 <span>+</span>
+          </div>
+          <button>Adicionar</button>
+        </div>
       </div>
     </section>
   );

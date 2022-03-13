@@ -32,13 +32,13 @@
   padding-left: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   .itemView {
     color: #4e4e4e;
     width: 100%;
-    min-width: 400px;
+    min-width: 375px;
     min-height: 30vh;
-    height: 47vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -55,6 +55,7 @@
     width: 400px;
     height: 38px;
     text-align: start;
+    padding: 0px 15px;
   }
 
   .itemView p {
@@ -62,6 +63,7 @@
     width: 400px;
     height: 56px;
     text-align: start;
+    padding: 0px 15px;
   }
 
   .itemView div {
