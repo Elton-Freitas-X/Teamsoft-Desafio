@@ -35,6 +35,15 @@
   align-items: center;
 }
 
+.ItemAmout .opcoes .contador div button {
+  font-size: 20px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  color: #D80000;
+}
+
+
 .ItemAmout div h1 {
   font-size: 14px;
   color: #4e4e4e;

@@ -1,11 +1,12 @@
 import React from "react";
-import { Logo, Account, Shopping, ArrowDown } from "../icons";
+import { Logo, Account, Shopping, ArrowDown, ArrowLeft} from "../icons";
 import "./style.css";
 
 const Header = () => {
   return (
     <nav>
       <div class="logo">
+        <ArrowLeft/>
         <Logo />
       </div>
       <div class="entrega">

@@ -28,7 +28,7 @@ const ItemAmount = ({ ingredients }) => {
                 <h1>{item.nm_item}</h1>
                 <div class="contador">
                   <div>
-                    <span>-</span> 2 <span>+</span>
+                    <button>-</button> 2 <button>+</button>
                   </div>
                 </div>
                 <p>
