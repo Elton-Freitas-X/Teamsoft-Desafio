@@ -1,0 +1,97 @@
+.ItemAmout {
+  border: 2px solid #9c9999;
+  padding: 30px;
+  border-radius: 4px;
+  height: 80vh;
+  width: 30vw;
+  min-height: 602px;
+  min-width: 400px;
+}
+
+.ItemAmout div {
+  width: 375px;
+}
+
+.ItemAmout .opcoes {
+  border-bottom: 1px solid #f09035;
+  width: 100%;
+  height: 88px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+}
+
+.ItemAmout .opcoes div {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.ItemAmout .opcoes div div {
+  width: 89px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #f09035;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ItemAmout div h1 {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
+.ItemAmout div p {
+  color: #f09035;
+  font-size: 14px;
+}
+
+.ItemAmout .FirstLast {
+  background-color: rgba(253, 215, 14, 0.2);
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.ItemAmout .adicionar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.ItemAmout .adicionar div {
+  margin: 8px 12px;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #f09035;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ItemAmout .adicionar button {
+  border: none;
+  background-color: #f09035;
+  border-radius: 4px;
+  color: #fff;
+  width: 300px;
+  height: 40px;
+  margin: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ItemAmout .adicionar .elipse {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .ItemAmout {
+    padding: 0;
+    border: none;
+  }
+}
