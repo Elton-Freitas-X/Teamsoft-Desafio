@@ -63,7 +63,7 @@ const ItemAmount = ({ ingredients }) => {
         </div>
         <div className="buttom">
           <div>
-            <span>-</span> 1 <span>+</span>
+            <button>-</button> 1 <button>+</button>
           </div>
           <button>Adicionar</button>
         </div>
