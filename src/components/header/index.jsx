@@ -1,12 +1,13 @@
 import React from "react";
-import { Logo, Account, Shopping, ArrowDown, ArrowLeft} from "../icons";
+import { Logo, Account, Shopping, ArrowDown, ArrowLeft } from "../icons";
+import ToolTip from "../tooltip";
 import "./style.css";
 
 const Header = () => {
   return (
     <nav>
       <div class="logo">
-        <ArrowLeft/>
+        <ArrowLeft />
         <Logo />
       </div>
       <div class="entrega">
@@ -29,6 +30,7 @@ const Header = () => {
         </div>
         <div>
           <Shopping />
+          <ToolTip />
           <a>Carrinho</a>
         </div>
       </div>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 const ItemAmount = ({ ingredients }) => {
   console.log(ingredients);
+  const [contador, setContador] = useState(0);
 
   return (
     <section className="ItemAmout">
@@ -63,7 +64,9 @@ const ItemAmount = ({ ingredients }) => {
         </div>
         <div className="buttom">
           <div>
-            <button>-</button> 1 <button>+</button>
+            <button onClick={() => setContador(contador - 1)}>-</button>{" "}
+            {contador}{" "}
+            <button onClick={() => setContador(contador + 1)}>+</button>
           </div>
           <button>Adicionar</button>
         </div>

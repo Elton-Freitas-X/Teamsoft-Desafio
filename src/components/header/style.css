@@ -10,7 +10,7 @@ nav {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-nav .logo svg:nth-child(1){
+nav .logo svg:nth-child(1) {
   display: none;
 }
 
@@ -58,7 +58,8 @@ nav .logo svg:nth-child(1){
   width: 240px;
 }
 
-.icons div:nth-child(1), .icons div:nth-child(2) {
+.icons div:nth-child(1),
+.icons div:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -66,14 +67,13 @@ nav .logo svg:nth-child(1){
   cursor: pointer;
 }
 
-
-@media (max-width: 425px){
+@media (max-width: 425px) {
   nav {
     width: 100%;
     min-width: 432px;
   }
 
-  nav .logo svg:nth-child(1){
+  nav .logo svg:nth-child(1) {
     display: block;
     position: absolute;
     top: 30px;

@@ -1,0 +1,169 @@
+#tooltip {
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#tooltip.right {
+  margin-left: 5px;
+}
+
+#tooltip.left {
+  margin-left: -5px;
+}
+
+#tooltip.top {
+  margin-top: -5px;
+}
+
+#tooltip.bottom {
+  margin-top: 5px;
+  width: 205px;
+}
+
+#tooltip .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+
+#tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: auto;
+  margin-left: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+
+#tooltip.top .tooltip-arrow {
+  top: auto;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+#tooltip.left .tooltip-arrow {
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+  right: -5px;
+  left: auto;
+}
+
+#tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #f09035;
+}
+
+#tooltip .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-right-color: transparent;
+  border-style: solid;
+}
+
+#tooltip .tooltip-label {
+  color: #4e4e4e;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  flex-direction: column;
+}
+
+#tooltip .tooltip-label h2 {
+  background-color: #f09035;
+  color: #fff;
+  font-size: 15px;
+  padding: 6px 10px 0px 10px;
+  height: 32px;
+}
+
+#tooltip .tooltip-label span {
+  color: #bc2e31;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#tooltip .tooltip-label p {
+  font-size: 14px;
+}
+
+#tooltip .tooltip-label h2,
+#tooltip .tooltip-label span,
+#tooltip .tooltip-label p,
+#tooltip .tooltip-label div p,
+#tooltip .tooltip-label ul {
+  width: 100%;
+}
+
+#tooltip .tooltip-label span,
+#tooltip .tooltip-label p {
+  padding: 0px 10px 0px 10px;
+}
+
+#tooltip .tooltip-label div p,
+#tooltip .tooltip-label ul li {
+  font-size: 12px;
+  color: #4e4e4e;
+}
+
+#tooltip .tooltip-label ul {
+  padding: 0px 10px 0px 30px;
+}
+
+@media (min-width: 2569px) {
+  #tooltip {
+    top: 55px;
+    right: 300px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #tooltip {
+    top: 55px;
+    right: 250px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #tooltip {
+    top: 55px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #tooltip {
+    top: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  #tooltip {
+    top: 55px;
+  }
+}

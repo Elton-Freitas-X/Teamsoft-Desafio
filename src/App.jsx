@@ -27,6 +27,7 @@ function App() {
         <ItemView  productName={f.nm_product} productDescription={f.description} price={f.vl_price} discount={f.vl_discount}/>
 
         <ItemAmount ingredients={f.ingredients}/>
+
       </main>
      ))}
     </>
