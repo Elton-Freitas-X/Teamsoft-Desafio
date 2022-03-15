@@ -67,6 +67,13 @@
   cursor: pointer;
 }
 
+.icons--shopping div {
+  display: flex;
+  align-items: center;
+  width: 105px;
+  justify-content: space-around;
+}
+
 @media (max-width: 425px) {
   .header__menu {
     width: 100%;
@@ -82,7 +89,9 @@
     color: #686868;
   }
 
-   .header__delivery,  .header__icons, .header__input {
+  .header__delivery,
+  .header__icons,
+  .header__input {
     display: none;
   }
 }

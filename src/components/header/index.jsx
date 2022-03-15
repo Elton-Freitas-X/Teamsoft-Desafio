@@ -1,9 +1,20 @@
 import React from "react";
 import { Logo, Account, Shopping, ArrowDown, ArrowLeft } from "../icons";
-import ToolTip from "../tooltip";
+import TooolTip from "../tooltip";
 import "./style.css";
+import Tippy from "@tippyjs/react";
+import {Tooltip} from '@material-ui/core'
 
 const Header = () => {
+  const BlueOnGreenTooltip = ({
+    tooltip: {
+      color: "lightblue",
+      backgroundColor: "green",
+      width: "400px",
+      position: "relative"
+    }
+  })
+
   return (
     <nav className="header__menu">
       <div className="header__logo">
@@ -30,9 +41,23 @@ const Header = () => {
           <span>Entrar</span>
         </div>
         <div className="icons--shopping">
+          <div>
+            <Shopping />
+            <Tippy content={<TooolTip />}>
+              <span>Carrinho</span>
+            </Tippy>
+          </div> 
+
+          {/*
           <Shopping />
-          <ToolTip />
-          <span>Carrinho</span>
+          <Tooltip
+            content={<TooolTip style={BlueOnGreenTooltip}/>}
+            placement="bottom"
+            arrow
+          >
+            <span>Carrinho</span>
+          </Tooltip> */}
+          
         </div>
       </div>
     </nav>
