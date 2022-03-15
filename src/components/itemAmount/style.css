@@ -1,4 +1,4 @@
-.ItemAmout {
+.main__section {
   border: 2px solid #9c9999;
   padding: 30px;
   border-radius: 4px;
@@ -8,11 +8,11 @@
   min-width: 440px;
 }
 
-.ItemAmout div {
+.main__section div {
   width: 375px;
 }
 
-.ItemAmout .opcoes {
+.main__section .totalize__ingredient__options {
   border-bottom: 1px solid #f09035;
   width: 100%;
   height: 88px;
@@ -20,13 +20,13 @@
   padding: 8px 12px;
 }
 
-.ItemAmout .opcoes div {
+.main__section .totalize__ingredient__options div {
   display: flex;
   width: 100%;
   justify-content: end;
 }
 
-.ItemAmout .opcoes div div {
+.main__section .totalize__ingredient__options div div {
   width: 89px;
   height: 32px;
   border-radius: 4px;
@@ -35,33 +35,36 @@
   align-items: center;
 }
 
-.ItemAmout .opcoes .contador div button {
+.main__section
+  .totalize__ingredient__options
+  .totalize__ingredient__subtract
+  div
+  button {
   font-size: 20px;
   border: none;
   background: #fff;
   cursor: pointer;
-  color: #D80000;
+  color: #d80000;
 }
 
-
-.ItemAmout div h1 {
+.main__section div h1 {
   font-size: 14px;
   color: #4e4e4e;
 }
 
-.ItemAmout div p {
+.main__section div p {
   color: #f09035;
   font-size: 14px;
 }
 
-.ItemAmout .totalize-ingredient {
+.main__section .totalize__ingredient {
   background-color: rgba(253, 215, 14, 0.2);
   padding: 8px 12px;
   width: 100%;
   height: 55px;
 }
 
-.ItemAmout .adicionar {
+.main__section .section__add {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,7 +73,7 @@
   margin-top: 15px;
 }
 
-.ItemAmout .adicionar div {
+.main__section .section__add div {
   margin: 0px 12px 0px 0px;
   width: 140px;
   height: 40px;
@@ -83,12 +86,12 @@
   justify-content: space-evenly;
 }
 
-.ItemAmout .adicionar .buttom{
+.main__section .section__add .add__btn {
   border: none;
   width: 100%;
 }
 
-.ItemAmout .adicionar button {
+.main__section .section__add button {
   border: none;
   background-color: #f09035;
   border-radius: 4px;
@@ -100,29 +103,24 @@
   font-size: 14px;
 }
 
-.ItemAmout .adicionar button div{
-  margin: 0 ;
+.main__section .section__add button div {
+  margin: 0;
 }
 
-.ItemAmout .adicionar .buttom div{
-  font-size: 16px;
-}
-
-.ItemAmout .adicionar .buttom div button{
+.main__section .section__add .add__btn div button {
   height: 30px;
   border: none;
   background: #fff;
   cursor: pointer;
-  color: #D80000;
-  font-size: 18px;
+  color: #d80000;
 }
 
-.ItemAmout .adicionar .elipse {
+.main__section .section__add .add__elipse {
   display: none;
 }
 
 @media (max-width: 425px) {
-  .ItemAmout {
+  .main__section {
     padding: 0;
     border: none;
     display: flex;
@@ -132,7 +130,7 @@
     height: 80vh;
   }
 
-  .ItemAmout .adicionar {
+  .main__section .section__add {
     flex-direction: column;
     padding: 0 35px;
     height: 22vh;
@@ -140,32 +138,28 @@
     margin-top: 0;
   }
 
-  .ItemAmout .totalize-ingredient{
-    
-  }
-
-  .ItemAmout .adicionar .elipse {
+  .main__section .section__add .add__elipse {
     display: flex;
     flex-direction: column;
     width: 100%;
     border: none;
   }
 
-  .ItemAmout .adicionar .elipse div{
+  .main__section .section__add .add__elipse .elipse__item {
     border: none;
     width: 100%;
     justify-content: space-between;
   }
 
-  .ItemAmout .adicionar .buttom{
+  .main__section .section__add .add__btn {
     margin: 0;
   }
 
-  .ItemAmout .adicionar .buttom div{
+  .main__section .section__add .add__btn div {
     margin: 0px 10px 0px 0px;
   }
 
-  .ItemAmout .adicionar .buttom button {
+  .main__section .section__add .add__btn button {
     margin: 0px;
   }
 }

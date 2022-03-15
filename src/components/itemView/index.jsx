@@ -3,14 +3,14 @@ import './style.css'
 
 const ItemView = ({productName, productDescription, imageFood, price, discount}) => {
   return (
-    <section className="itemView">
-      <img src="./hamburguer.png" alt="Imagem Hamburguer" />
-      <h1>{productName}</h1>
-      <p>
+    <section className="section__itemview">
+      <img className="itemview__product" src="./hamburguer.png" alt="Imagem Hamburguer" />
+      <h1 className="itemview__productname">{productName}</h1>
+      <p className="itemview__productdescription">
         {productDescription}
       </p>
-      <div>
-        <p>
+      <div className="itemview__item">
+        <p className="itemview__prices">
           {discount} <s>{price}</s>
         </p>
       </div>

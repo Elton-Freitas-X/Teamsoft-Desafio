@@ -6,7 +6,7 @@ const ItemAmount = ({ ingredients }) => {
   const [contador, setContador] = useState(0);
 
   return (
-    <section className="ItemAmout">
+    <section className="main__section">
       {/*  {ingredients.map(i =>(
       <div>
         <h1>{i.group}</h1>
@@ -17,7 +17,7 @@ const ItemAmount = ({ ingredients }) => {
     ))}*/}
       {ingredients.map((ingredient) => (
         <div>
-          <div class="totalize-ingredient">
+          <div className="totalize__ingredient">
             <h1>{ingredient.group}</h1>
             {ingredient.group === "Ingredientes Extras" ? (
               <p>Até {ingredient.max_itens} ingredientes.</p>
@@ -25,9 +25,9 @@ const ItemAmount = ({ ingredients }) => {
           </div>
           {ingredient.type === "number" &&
             ingredient.itens.map((item) => (
-              <div class="opcoes" key={item.id}>
+              <div className="totalize__ingredient__options" key={item.id}>
                 <h1>{item.nm_item}</h1>
-                <div class="contador">
+                <div className="totalize__ingredient__subtract">
                   <div>
                     <button>-</button> 2 <button>+</button>
                   </div>
@@ -41,7 +41,7 @@ const ItemAmount = ({ ingredients }) => {
               </div>
             ))}
           {ingredient.type === "bolean" && (
-            <div class="elipse">
+            <div className="elipse">
               <span>Sim</span>
               <input type="radio" name="opcao" value="Sim" />
               <span>Não</span>
@@ -51,19 +51,19 @@ const ItemAmount = ({ ingredients }) => {
         </div>
       ))}
 
-      <div class="adicionar">
-        <div class="elipse">
-          <div>
+      <div className="section__add">
+        <div className="add__elipse">
+          <div className="elipse__item">
             <span>Sim</span>
             <input type="radio" name="opcao" value="Sim" />
           </div>
-          <div>
+          <div className="elipse__item">
             <span>Não</span>
             <input type="radio" name="opcao" value="Não" />
           </div>
         </div>
-        <div className="buttom">
-          <div>
+        <div className="add__btn">
+          <div className="btn__item">
             <button onClick={() => setContador(contador - 1)}>-</button>{" "}
             {contador}{" "}
             <button onClick={() => setContador(contador + 1)}>+</button>

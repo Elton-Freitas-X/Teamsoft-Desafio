@@ -1,39 +1,39 @@
-.itemView {
+.section__itemview {
   color: #4e4e4e;
   width: 50vw;
   min-width: 768px;
   min-height: 568px;
 }
 
-.itemView h1 {
+.section__itemview .itemview__productname {
   font-size: 28px;
   width: 528.56px;
   height: 91.59px;
 }
 
-.itemView p {
+.section__itemview .itemview__productdescription {
   font-size: 20px;
   width: 550px;
   height: 65.17px;
 }
 
-.itemView div {
+.section__itemview .itemview__item {
   width: 300px;
   height: 38px;
 }
 
-.itemView div p {
+.section__itemview .itemview__item .itemview__prices {
   font-size: 32px;
   color:#dc6e05;
 }
 
-.itemView div p s {
+.section__itemview .itemview__item .itemview__prices s {
   color: #4E4E4E;
   padding-left: 0.5rem;
 }
 
 @media (max-width: 425px) {
-  .itemView {
+  .section__itemview {
     color: #4e4e4e;
     width: 100%;
     min-width: 375px;
@@ -45,12 +45,12 @@
     align-items: center;
   }
 
-  .itemView img {
+  .section__itemview .itemview__product {
     height: 140px;
     width: 250px;
   }
 
-  .itemView h1 {
+  .section__itemview .itemview__productname {
     font-size: 18px;
     width: 400px;
     height: 38px;
@@ -58,7 +58,7 @@
     padding: 0px 15px;
   }
 
-  .itemView p {
+  .section__itemview .itemview__productdescription {
     font-size: 16px;
     width: 400px;
     height: 56px;
@@ -66,12 +66,13 @@
     padding: 0px 15px;
   }
 
-  .itemView div {
+  .section__itemview .itemview__item {
     width: 400px;
     height: 38px;
   }
 
-  .itemView div p {
+  .section__itemview .itemview__item .itemview__prices {
     font-size: 14px;
+    padding: 0px 15px;
   }
 }

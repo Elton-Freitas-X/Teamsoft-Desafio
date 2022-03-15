@@ -5,33 +5,34 @@ import "./style.css";
 
 const Header = () => {
   return (
-    <nav>
-      <div class="logo">
+    <nav className="header__menu">
+      <div className="header__logo">
         <ArrowLeft />
         <Logo />
       </div>
-      <div class="entrega">
+      <div className="header__delivery">
         <div>
-          <h5>Entrega:</h5>
-          <p>R. Antonio Braoune, 222</p>
+          <h5 className="header__delivery__h5">Entrega:</h5>
+          <p className="header__delivery__p">R. Antonio Braoune, 222</p>
         </div>
         <ArrowDown />
       </div>
-      <div class="input">
+      <div className="header__input">
         <input
+          className="header__input__item"
           type="text"
           placeholder="Busque por estabelecimento ou produtos"
         />
       </div>
-      <div class="icons">
-        <div>
+      <div className="header__icons">
+        <div className="icons--account">
           <Account />
-          <a>Entrar</a>
+          <span>Entrar</span>
         </div>
-        <div>
+        <div className="icons--shopping">
           <Shopping />
           <ToolTip />
-          <a>Carrinho</a>
+          <span>Carrinho</span>
         </div>
       </div>
     </nav>
