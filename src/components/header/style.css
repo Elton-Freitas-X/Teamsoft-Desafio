@@ -74,6 +74,12 @@
   justify-content: space-around;
 }
 
+.icons--shopping div span {
+  height: 30px;
+  padding-top: 5px;
+  transition: 0.2s;
+}
+
 @media (max-width: 425px) {
   .header__menu {
     width: 100%;

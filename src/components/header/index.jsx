@@ -3,18 +3,9 @@ import { Logo, Account, Shopping, ArrowDown, ArrowLeft } from "../icons";
 import TooolTip from "../tooltip";
 import "./style.css";
 import Tippy from "@tippyjs/react";
-import {Tooltip} from '@material-ui/core'
+import { Tooltip } from "@material-ui/core";
 
 const Header = () => {
-  const BlueOnGreenTooltip = ({
-    tooltip: {
-      color: "lightblue",
-      backgroundColor: "green",
-      width: "400px",
-      position: "relative"
-    }
-  })
-
   return (
     <nav className="header__menu">
       <div className="header__logo">
@@ -43,10 +34,11 @@ const Header = () => {
         <div className="icons--shopping">
           <div>
             <Shopping />
+
             <Tippy content={<TooolTip />}>
               <span>Carrinho</span>
             </Tippy>
-          </div> 
+          </div>
 
           {/*
           <Shopping />
@@ -57,7 +49,6 @@ const Header = () => {
           >
             <span>Carrinho</span>
           </Tooltip> */}
-          
         </div>
       </div>
     </nav>

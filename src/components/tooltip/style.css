@@ -16,6 +16,15 @@
   word-wrap: normal;
   border-radius: 4px;
   display: inline-block;
+  animation: identifier alternate 2.1s;
+}
+
+@keyframes identifier {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
 }
 
 #tooltip.right {
@@ -138,27 +147,27 @@
 @media (min-width: 2569px) {
   #tooltip {
     top: 55px;
-    right: 300px;
+    left: 100px;
   }
 }
 
 @media (min-width: 1440px) {
   #tooltip {
     top: 55px;
-    right: 250px;
   }
 }
 
 @media (min-width: 1280px) {
   #tooltip {
     top: 55px;
-    right: 50px;
+    right: -50px;
   }
 }
 
 @media (min-width: 1024px) {
   #tooltip {
     top: 55px;
+    right: -50px;
   }
 }
 
