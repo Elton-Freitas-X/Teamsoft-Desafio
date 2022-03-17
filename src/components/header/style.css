@@ -63,30 +63,29 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 105px;
+  width: 84px;
   cursor: pointer;
 }
 
 .icons__shopping .shooping__item {
   display: flex;
-  align-items: center;
+ 
   width: 105px;
   justify-content: space-around;
 }
 
-.icons__shopping .shooping__item  span:nth-child(1){
-
-    background: orange;
-    border-radius: 39px;
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    color: #fff;
-    text-align: center;
-    line-height: 10px;
-    font-size: 11px;
-    top: 15px;
-    right: 240px;
+.icons__shopping .shooping__item span:nth-child(1) {
+  background: orange;
+  border-radius: 39px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 10px;
+  font-size: 11px;
+  top: -8px;
+  right: -35px;
 }
 
 .icons__shopping .shooping__item span {
@@ -94,39 +93,6 @@
   padding-top: 5px;
   transition: 0.2s;
 }
-
-@media (max-width: 2560px){
-  .icons__shopping .shooping__item  span:nth-child(1){
-    right: 366px;
-    top: 23px;
-  }
-}
-
-@media (max-width: 1440px){
-  .icons__shopping .shooping__item  span:nth-child(1){
-    top: 12px;
-    right: 145px;
-  }
-}
-
-@media (max-width: 1280px){
-  .icons__shopping .shooping__item  span:nth-child(1){
-    right: 110px;
-  }
-}
-
-@media (max-width: 1024px){
-  .icons__shopping .shooping__item  span:nth-child(1){
-    right: -145px;
-  }
-}
-
-@media (max-width: 768px){
-  .icons__shopping .shooping__item  span:nth-child(1){
-    right: -400px;
-  }
-}
-
 
 @media (max-width: 425px) {
   .header__menu {
