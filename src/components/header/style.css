@@ -59,7 +59,7 @@
 }
 
 .header__icons .icons--account,
-.header__icons .icons--shopping {
+.header__icons .icons__shopping {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -67,23 +67,71 @@
   cursor: pointer;
 }
 
-.icons--shopping div {
+.icons__shopping .shooping__item {
   display: flex;
   align-items: center;
   width: 105px;
   justify-content: space-around;
 }
 
-.icons--shopping div span {
+.icons__shopping .shooping__item  span:nth-child(1){
+
+    background: orange;
+    border-radius: 39px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 10px;
+    font-size: 11px;
+    top: 15px;
+    right: 240px;
+}
+
+.icons__shopping .shooping__item span {
   height: 30px;
   padding-top: 5px;
   transition: 0.2s;
 }
 
+@media (max-width: 2560px){
+  .icons__shopping .shooping__item  span:nth-child(1){
+    right: 366px;
+    top: 23px;
+  }
+}
+
+@media (max-width: 1440px){
+  .icons__shopping .shooping__item  span:nth-child(1){
+    top: 12px;
+    right: 145px;
+  }
+}
+
+@media (max-width: 1280px){
+  .icons__shopping .shooping__item  span:nth-child(1){
+    right: 110px;
+  }
+}
+
+@media (max-width: 1024px){
+  .icons__shopping .shooping__item  span:nth-child(1){
+    right: -145px;
+  }
+}
+
+@media (max-width: 768px){
+  .icons__shopping .shooping__item  span:nth-child(1){
+    right: -400px;
+  }
+}
+
+
 @media (max-width: 425px) {
   .header__menu {
     width: 100%;
-    min-width: 425px;
+    min-width: 400px;
   }
 
   .header__menu .header__logo svg:nth-child(1) {

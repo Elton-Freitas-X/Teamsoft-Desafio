@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./style.css";
 
 const ItemAmount = ({ ingredients }) => {
-  console.log(ingredients);
   const [contador, setContador] = useState(0);
+  const [addCarrinho, setAddCarrinho] = useState(0);
 
   return (
     <section className="main__section">
@@ -55,11 +55,11 @@ const ItemAmount = ({ ingredients }) => {
         <div className="add__elipse">
           <div className="elipse__item">
             <span>Sim</span>
-            <input type="radio" name="opcao" value="Sim" />
+            <input  type="radio" name="opcao" value="Sim" />
           </div>
           <div className="elipse__item">
             <span>Não</span>
-            <input type="radio" name="opcao" value="Não" />
+            <input  type="radio" name="opcao" value="Não" />
           </div>
         </div>
         <div className="add__btn">
@@ -68,7 +68,9 @@ const ItemAmount = ({ ingredients }) => {
             {contador}{" "}
             <button onClick={() => setContador(contador + 1)}>+</button>
           </div>
-          <button>Adicionar</button>
+          <button onClick={() => setAddCarrinho(addCarrinho + 1)}>
+            Adicionar
+          </button>
         </div>
       </div>
     </section>

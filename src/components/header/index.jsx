@@ -3,7 +3,6 @@ import { Logo, Account, Shopping, ArrowDown, ArrowLeft } from "../icons";
 import TooolTip from "../tooltip";
 import "./style.css";
 import Tippy from "@tippyjs/react";
-import { Tooltip } from "@material-ui/core";
 
 const Header = () => {
   return (
@@ -31,24 +30,15 @@ const Header = () => {
           <Account />
           <span>Entrar</span>
         </div>
-        <div className="icons--shopping">
-          <div>
+        <div className="icons__shopping">
+          <div className="shooping__item">
+            <span className="shopping__qtdItens">1</span>
             <Shopping />
 
             <Tippy content={<TooolTip />}>
               <span>Carrinho</span>
             </Tippy>
           </div>
-
-          {/*
-          <Shopping />
-          <Tooltip
-            content={<TooolTip style={BlueOnGreenTooltip}/>}
-            placement="bottom"
-            arrow
-          >
-            <span>Carrinho</span>
-          </Tooltip> */}
         </div>
       </div>
     </nav>

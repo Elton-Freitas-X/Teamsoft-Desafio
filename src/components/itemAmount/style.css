@@ -145,6 +145,15 @@
     border: none;
   }
 
+  .section__add .add__elipse .elipse__item {
+    color: #4e4e4e;
+  }
+
+  .add__elipse .elipse__item input[type="radio"] {
+    color: #febc10;
+    outline: auto;
+  }
+
   .main__section .section__add .add__elipse .elipse__item {
     border: none;
     width: 100%;

@@ -4,9 +4,9 @@ import "./style.css";
 const ToolTip = () => {
   return (
     <>
-      <div id="tooltip" class="bottom">
-        <div class="tooltip-arrow" />
-        <div class="tooltip-label">
+      <div id="tooltip" className="bottom">
+        <div className="tooltip__arrow" />
+        <div className="tooltip__label">
           <h2>Adicionado com Sucesso</h2>
           <span>Oferta Cheddar Bacon</span>
 

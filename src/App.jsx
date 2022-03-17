@@ -12,7 +12,6 @@ function App() {
   const loadFood = async () => {
     const response = await api.get("products");
     setFood(response.data);
-    console.log(response);
   };
 
   useEffect(() => {

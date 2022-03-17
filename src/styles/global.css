@@ -16,12 +16,12 @@
 }
 
 @media (max-width: 425px) {
-  .main__content{
+  .main__content {
     min-width: 432px;
   }
 
   nav.header__menu {
-    min-width: 390px;
+    min-width: 400px;
     justify-content: center;
     height: 8vh;
   }
